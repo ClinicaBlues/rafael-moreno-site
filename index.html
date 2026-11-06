@@ -11,7 +11,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Dr. Rafael Moreno — Ortopedia &amp; Traumatologia</title>
-<meta name="description" content="Dr. Rafael Moreno Chaves — Ortopedista e Traumatologista em Belo Horizonte. Tratamento completo da dor musculoesquelética com tecnologias modernas e abordagem multidisciplinar." />
+<meta name="description" content="Dr. Rafael Moreno Chaves — Ortopedista e Traumatologista em Belo Horizonte e outras cidades de Minas Gerais. Tratamento completo da dor musculoesquelética com tecnologias modernas e abordagem multidisciplinar." />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -138,7 +138,7 @@ section{padding:clamp(80px,10vw,140px) 0;position:relative}
 
 .hero-visual{position:relative}
 .hero-photo{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--c-midnight);box-shadow:var(--shadow-lg)}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:contrast(1.02) saturate(.95)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:38% center;filter:contrast(1.02) saturate(.95)}
 .hero-photo::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(14,23,34,.25) 100%);z-index:1;pointer-events:none}
 .hero-frame{position:absolute;inset:-12px;border:1px solid var(--c-champagne);pointer-events:none;z-index:0}
 .hero-credentials{position:absolute;right:-20px;bottom:40px;z-index:2;background:var(--c-paper);padding:22px 26px;box-shadow:var(--shadow-md);max-width:260px;border-left:2px solid var(--c-champagne)}
@@ -312,6 +312,52 @@ section{padding:clamp(80px,10vw,140px) 0;position:relative}
 .form-note svg{display:inline;vertical-align:-2px;margin-right:5px}
 
 /* =========================================================
+   ONDE ATENDE
+   ========================================================= */
+.locais{background:var(--c-paper)}
+.loc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1040px;margin:0 auto}
+.loc-card{background:var(--c-cream-2);border:1px solid var(--c-line-soft);border-top:2px solid var(--c-champagne);padding:26px 24px;display:flex;flex-direction:column;gap:6px}
+.loc-card small{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--c-muted)}
+.loc-card strong{font-family:var(--ff-serif);font-weight:600;font-size:1.45rem;color:var(--c-midnight);line-height:1.15}
+.loc-card span{font-size:.9rem;color:var(--c-text-soft)}
+.loc-note{text-align:center;color:var(--c-text-soft);margin:36px auto 0;max-width:60ch}
+@media (max-width:880px){.loc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.loc-grid{grid-template-columns:1fr}}
+
+/* =========================================================
+   QUALIFICAÇÃO
+   ========================================================= */
+.lead-form .form-card{max-width:720px}
+.q-prog{display:flex;align-items:center;gap:14px;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--c-muted);margin-bottom:22px}
+.q-prog .bar{flex:1;height:2px;background:var(--c-line)}
+.q-prog .bar i{display:block;height:100%;background:var(--c-champagne);transition:width .35s ease}
+.q-title{font-family:var(--ff-serif);font-weight:500;font-size:1.7rem;color:var(--c-midnight);margin-bottom:6px}
+.qq{margin-top:24px}
+.qq .lbl{font-weight:600;color:var(--c-midnight);font-size:1rem;margin-bottom:6px;line-height:1.4}
+.qq .hint{font-size:.85rem;color:var(--c-muted);margin-bottom:10px}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.pill{position:relative;cursor:pointer}
+.pill input{position:absolute;opacity:0;pointer-events:none}
+.pill span{display:inline-block;padding:10px 16px;border:1px solid var(--c-line);background:var(--c-white);font-size:.92rem;color:var(--c-text);transition:all .2s ease;line-height:1.3}
+.pill:hover span{border-color:var(--c-champagne)}
+.pill input:checked+span{background:var(--c-midnight);border-color:var(--c-midnight);color:var(--c-cream)}
+.pill input:focus-visible+span{outline:2px solid var(--c-champagne);outline-offset:2px}
+.scale{display:grid;grid-template-columns:repeat(11,1fr);gap:4px;margin-top:8px}
+.scale .pill span{display:block;text-align:center;padding:10px 0;font-weight:600}
+.scale-l{display:flex;justify-content:space-between;font-size:.75rem;color:var(--c-muted);margin-top:6px}
+.halves{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.lead-form .form-field{margin-top:18px;margin-bottom:0}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:.86rem;color:var(--c-text-soft);margin-top:22px;line-height:1.55;cursor:pointer}
+.consent input{width:20px;height:20px;flex:none;margin-top:2px;accent-color:var(--c-champagne-dark)}
+.q-err{color:#b2412e;font-size:.9rem;font-weight:600;margin-top:16px}
+.q-nav{display:flex;gap:12px;margin-top:30px}
+.q-nav .btn{flex:1;white-space:normal;min-width:0;padding-left:16px;padding-right:16px}
+.btn-line{border:1px solid var(--c-line);color:var(--c-midnight);background:transparent;flex:0 0 auto!important}
+.btn-line:hover{border-color:var(--c-champagne)}
+.q-nav .btn[disabled]{opacity:.6;cursor:default;transform:none}
+@media (max-width:620px){.halves{grid-template-columns:1fr}.scale{grid-template-columns:repeat(6,1fr)}}
+
+/* =========================================================
    FOOTER
    ========================================================= */
 footer{background:#080F19;color:rgba(246,241,232,.65);padding:80px 0 30px;font-size:.9rem}
@@ -365,6 +411,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="#anatomia">Tratamentos</a>
       <a href="#cirurgia">Cirurgia</a>
       <a href="#sobre">Sobre</a>
+      <a href="#locais">Onde atendo</a>
       <a href="#faq">Dúvidas</a>
     </nav>
     <a href="#formulario" class="btn btn-primary btn-sm">Agendar consulta</a>
@@ -379,7 +426,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="eyebrow">Ortopedista · CRM-MG 91439 · RQE 70774</span>
         <h1>Sua dor não precisa <em>definir sua vida.</em></h1>
         <p class="hero-tagline">"Cuido da dor e devolvo qualidade de vida aos meus pacientes."</p>
-        <p class="lead">Tratamento completo da dor musculoesquelética com abordagem personalizada.</p>
+        <p class="lead">Tratamento completo da dor musculoesquelética com abordagem personalizada. Atendimento em Belo Horizonte e em outras cidades de Minas Gerais.</p>
         <div class="hero-cta">
           <a href="#formulario" class="btn btn-primary">Agendar consulta</a>
         </div>
@@ -522,7 +569,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </details>
       <details class="faq-item fade-up">
         <summary>Posso fazer atividade física durante o tratamento?<span class="caret">+</span></summary>
-        <div class="faq-body">Na maioria dos casos sim. O tipo, intensidade e frequência são ajustados ao seu quadro, em conjunto com a equipe multidisciplinar da Clínica Blues.</div>
+        <div class="faq-body">Na maioria dos casos sim. O tipo, intensidade e frequência são ajustados ao seu quadro, em conjunto com a equipe multidisciplinar que acompanha o seu tratamento.</div>
       </details>
     </div>
   </div>
@@ -538,38 +585,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- ================================================ FORMULÁRIO DE CAPTURA ================================================ -->
+<!-- ================================================ ONDE ATENDE ================================================ -->
+<section id="locais" class="locais">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Onde atendo</span>
+      <h2>Belo Horizonte e <em>outras cidades de Minas</em></h2>
+      <p>Consultório fixo em Belo Horizonte e agenda, sob consulta com a equipe, em outras cidades de Minas Gerais.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-card fade-up">
+        <small>Consultório</small>
+        <strong>Belo Horizonte</strong>
+        <span>R. Padre Marinho, 165 · Santa Efigênia</span>
+      </div>
+      <div class="loc-card fade-up">
+        <small>Sob consulta</small>
+        <strong>Juiz de Fora</strong>
+        <span>Datas combinadas com a equipe</span>
+      </div>
+      <div class="loc-card fade-up">
+        <small>Sob consulta</small>
+        <strong>Itaúna</strong>
+        <span>Datas combinadas com a equipe</span>
+      </div>
+      <div class="loc-card fade-up">
+        <small>Sob consulta</small>
+        <strong>Santa Luzia</strong>
+        <span>Datas combinadas com a equipe</span>
+      </div>
+    </div>
+    <p class="loc-note fade-up">Mora em outra cidade de Minas? Conte no formulário abaixo e a equipe verifica a agenda mais próxima de você.</p>
+  </div>
+</section>
+
+<!-- ================================================ QUALIFICAÇÃO (FORMULÁRIO) ================================================ -->
 <section id="formulario" class="lead-form">
   <div class="container">
     <div class="form-card fade-up">
       <div class="section-head">
-        <span class="eyebrow">Agende sua consulta</span>
-        <h2>Dê o primeiro passo <em>agora.</em></h2>
-        <p>Preencha seus dados e nossa equipe entrará em contato para agendar seu atendimento.</p>
+        <span class="eyebrow">Agende sua avaliação</span>
+        <h2>Conte um pouco <em>sobre a sua dor.</em></h2>
+        <p>Cerca de 2 minutos. Assim o Dr. Rafael já conhece o seu caso e a equipe chama você no WhatsApp para agendar.</p>
       </div>
-
-      <form id="lead-form" novalidate>
-        <div class="form-field">
-          <label for="lf-nome">Nome completo</label>
-          <input type="text" id="lf-nome" name="nome" placeholder="Seu nome" autocomplete="name" required />
-        </div>
-        <div class="form-field">
-          <label for="lf-email">E-mail</label>
-          <input type="email" id="lf-email" name="email" placeholder="seu@email.com" autocomplete="email" required />
-        </div>
-        <div class="form-field">
-          <label for="lf-whatsapp">WhatsApp</label>
-          <input type="tel" id="lf-whatsapp" name="whatsapp" placeholder="(31) 99999-9999" autocomplete="tel" inputmode="numeric" maxlength="16" required />
-        </div>
-
-        <div class="form-actions">
-          <button type="submit" class="btn btn-gold">Agendar agora</button>
-        </div>
-        <p class="form-note">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          Seus dados estão seguros e não serão compartilhados.
-        </p>
-      </form>
+      <div id="qbox" aria-live="polite"></div>
     </div>
   </div>
 </section>
@@ -591,22 +650,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><a href="#anatomia">Tratamentos</a></li>
           <li><a href="#cirurgia">Cirurgia</a></li>
           <li><a href="#sobre">Sobre o Dr. Rafael</a></li>
+          <li><a href="#locais">Onde atendo</a></li>
           <li><a href="#faq">Perguntas frequentes</a></li>
         </ul>
       </div>
       <div>
         <h4>Contato</h4>
         <address>
-          <strong style="color:var(--c-cream);font-weight:500;display:block;margin-bottom:4px">Clínica Blues</strong>
-          R. Padre Marinho, 165<br/>
-          Santa Efigênia<br/>
-          Belo Horizonte — MG<br/><br/>
+          <strong style="color:var(--c-cream);font-weight:500;display:block;margin-bottom:4px">Consultório em Belo Horizonte</strong>
+          R. Padre Marinho, 165 · Santa Efigênia<br/>
+          Belo Horizonte — MG<br/>
+          Também em Juiz de Fora, Itaúna e Santa Luzia, sob consulta<br/><br/>
           <a href="https://wa.me/5531995979065" target="_blank" rel="noopener">WhatsApp</a>
         </address>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© Clínica Blues · Todos os direitos reservados.</span>
+      <span>© Dr. Rafael Moreno Chaves · CRM-MG 91439 · RQE 70774</span>
       <span>Comunicação em conformidade com as normas do CFM.</span>
     </div>
   </div>
@@ -656,65 +716,143 @@ document.querySelectorAll('img').forEach(function(im){ im.addEventListener('erro
   });
 })();
 
-/* Máscara de WhatsApp: (99) 99999-9999 */
+/* =========================================================
+   QUALIFICAÇÃO DE LEAD (vai por e-mail para o Dr. Rafael)
+   ========================================================= */
 (function(){
-  const wa = document.getElementById('lf-whatsapp');
-  if(!wa) return;
-  wa.addEventListener('input',function(){
-    let v = this.value.replace(/\D/g,'').slice(0,11);
-    let out = '';
-    if(v.length>0)            out  = '(' + v.slice(0,2);
-    if(v.length>=2)           out += ') ' + v.slice(2,7);
-    if(v.length>=7)           out += '-' + v.slice(7,11);
-    this.value = out;
-  });
-})();
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbxnz-5sdeR8eBiU6CkLddFit2o4DV3ee6pxffbriJhzr522AscFwRefQIw-rzDijefP/exec';
+  var WRITE_KEY = 'rafael-pre-2026';
+  var OBRIGADO_URL = 'obrigado.html';
+  var KEY = 'rm-lead-v1';
+  var box = document.getElementById('qbox'); if (!box) return;
+  var a = {}, step = 0;
+  try { var sv = JSON.parse(localStorage.getItem(KEY)); if (sv && sv.a) { a = sv.a; step = sv.step||0; } } catch(e){}
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify({a:a, step:step})); } catch(e){} }
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  var EX = /^(Nenhum|Nenhuma dessas opções|Não atrapalha|Nunca fiz tratamento)$/;
 
-/* Submissão do formulário de captura */
-(function(){
-  const form = document.getElementById('lead-form');
-  if(!form) return;
+  var STEPS = [
+    { t:'Sobre a sua dor', q:[
+      {id:'regiao', c:'Onde dói', t:'Qual região mais incomoda você?', hint:'Pode marcar mais de uma.', type:'multi', req:1, o:['Joelho','Quadril','Ombro','Coluna lombar','Pescoço','Mão ou punho','Cotovelo','Pé ou tornozelo','Dor espalhada pelo corpo','Outra']},
+      {id:'tempo', c:'Há quanto tempo', t:'Há quanto tempo você sente essa dor?', type:'one', req:1, o:['Menos de 3 meses','De 3 meses a 1 ano','De 1 a 5 anos','Mais de 5 anos']},
+      {id:'eva', c:'Intensidade (0-10)', t:'De 0 a 10, qual a intensidade da dor na maior parte dos dias?', type:'scale', req:1}
+    ]},
+    { t:'Como a dor aparece', q:[
+      {id:'sintomas', c:'Sintomas', t:'Você tem algum destes sintomas?', hint:'Pode marcar mais de uma.', type:'multi', o:['Dor que desce para a perna ou braço','Formigamento ou dormência','Rigidez ao acordar','Dor ao subir ou descer escada','Dor ao agachar ou levantar da cadeira','Inchaço ou estalos','Dificuldade para caminhar','Dor à noite','Nenhuma dessas opções']},
+      {id:'impacto', c:'O que a dor atrapalha', t:'A dor atrapalha alguma destas áreas?', type:'multi', o:['Trabalho','Sono','Tarefas de casa','Atividade física','Lazer e vida social','Humor e disposição','Não atrapalha']}
+    ]},
+    { t:'O que já foi feito', q:[
+      {id:'trat', c:'Tratamentos feitos', t:'Você já fez algum tratamento para essa dor?', type:'multi', o:['Remédios','Fisioterapia','Infiltração','Acupuntura','Cirurgia','Nunca fiz tratamento']},
+      {id:'remedio', c:'Remédio para dor', t:'Com que frequência você usa remédio para dor?', type:'one', o:['Todos os dias','Algumas vezes por semana','Raramente','Não uso']},
+      {id:'cirurgia', c:'Cirurgia indicada', t:'Algum médico já indicou cirurgia para essa dor?', type:'one', req:1, o:['Sim','Não','Já discutiram, mas não indicaram']},
+      {id:'peso', c:'Acima do peso', t:'Você considera que está acima do peso?', type:'one', o:['Sim','Não','Não sei informar']}
+    ]},
+    { t:'O seu interesse', q:[
+      {id:'cidade', c:'Cidade', t:'Onde você prefere ser atendido(a)?', type:'one', req:1, o:['Belo Horizonte','Juiz de Fora','Itaúna','Santa Luzia','Outra cidade de MG','Fora de Minas Gerais']},
+      {id:'busca', c:'O que busca', t:'O que você mais quer com o tratamento?', hint:'Pode marcar mais de uma.', type:'multi', o:['Aliviar a dor o quanto antes','Evitar ou adiar uma cirurgia','Voltar ao esporte ou à academia','Voltar a caminhar sem dor','Tratamento regenerativo','Uma segunda opinião']},
+      {id:'quando', c:'Quando quer começar', t:'Quando você gostaria de passar em consulta?', type:'one', req:1, o:['O quanto antes','Nas próximas semanas','Nos próximos meses','Só quero informações por enquanto']}
+    ]}
+  ];
+  function steps(){ return STEPS.concat([{ t:'Seus dados para contato', contato:1 }]); }
 
-  /* ➜ Altere aqui para a página final em produção (ex.: "/obrigado") */
-  const OBRIGADO_URL = 'obrigado.html';
-  /* ➜ Plugue seu endpoint/Webhook aqui (deixe vazio para apenas redirecionar) */
-  const WEBHOOK_URL = '';
-
-  form.addEventListener('submit', async function(e){
-    e.preventDefault();
-    if(!form.checkValidity()){ form.reportValidity(); return; }
-
-    const data = {
-      nome:     form.nome.value.trim(),
-      email:    form.email.value.trim(),
-      whatsapp: form.whatsapp.value.trim(),
-      origem:   'landing-dr-rafael-moreno',
-      enviadoEm: new Date().toISOString()
-    };
-
-    const btn = form.querySelector('button[type="submit"]');
-    btn.disabled = true;
-    btn.textContent = 'Enviando...';
-
-    try {
-      if(WEBHOOK_URL){
-        await fetch(WEBHOOK_URL, {
-          method:'POST',
-          headers:{'Content-Type':'application/json'},
-          body: JSON.stringify(data)
-        });
-      } else {
-        /* Simulação enquanto a API não está plugada */
-        console.log('Lead capturado (simulação):', data);
-      }
-    } catch(err){
-      console.error('Falha ao enviar lead:', err);
-    } finally {
-      try { sessionStorage.setItem('rm-lead', JSON.stringify({nome:data.nome, whatsapp:data.whatsapp})); } catch(e){}
-      /* Redireciona independentemente, para não travar o usuário */
-      window.location.href = OBRIGADO_URL;
+  function qHtml(q){
+    var v = a[q.id], h = '<div class="qq" data-q="'+q.id+'"><div class="lbl">'+esc(q.t)+'</div>';
+    if (q.hint) h += '<div class="hint">'+esc(q.hint)+'</div>';
+    if (q.type==='one'||q.type==='multi') {
+      h += '<div class="opts">' + q.o.map(function(o){ var on = q.type==='one' ? v===o : (v||[]).indexOf(o)>-1;
+        return '<label class="pill"><input type="'+(q.type==='one'?'radio':'checkbox')+'" name="'+q.id+'" value="'+esc(o)+'"'+(on?' checked':'')+'><span>'+esc(o)+'</span></label>'; }).join('') + '</div>';
+    } else if (q.type==='scale') {
+      h += '<div class="scale">'; for (var i=0;i<=10;i++) h += '<label class="pill"><input type="radio" name="'+q.id+'" value="'+i+'"'+(String(v)===String(i)?' checked':'')+'><span>'+i+'</span></label>'; h += '</div><div class="scale-l"><span>sem dor</span><span>pior dor imaginável</span></div>';
     }
-  });
+    return h + '</div>';
+  }
+  function field(id,label,attrs,ph){ return '<div class="form-field"><label for="lq_'+id+'">'+label+'</label><input id="lq_'+id+'" name="'+id+'" '+attrs+(ph?' placeholder="'+esc(ph)+'"':'')+' value="'+esc(a[id]||'')+'"></div>'; }
+
+  function render(){
+    var ST = steps(); if (step >= ST.length) step = ST.length-1; var st = ST[step];
+    var h = '<div class="q-prog"><span>'+(step+1)+' de '+ST.length+'</span><span class="bar"><i style="width:'+Math.round((step+1)/ST.length*100)+'%"></i></span></div>';
+    h += '<h3 class="q-title">'+esc(st.t)+'</h3>';
+    if (st.contato) {
+      h += '<div class="halves">'+field('nome','Seu nome','autocomplete="name"')+field('whats','WhatsApp com DDD','type="tel" inputmode="tel" autocomplete="tel" maxlength="16"','(31) 99999-9999')+'</div>';
+      h += '<div class="halves">'+field('email','E-mail (opcional)','type="email" autocomplete="email"')+field('prof','Profissão ou ocupação','autocomplete="organization-title"','Ex.: professora, motorista, aposentado')+'</div>';
+      h += qHtml({ id:'horario', t:'Melhor horário para falarmos', type:'one', o:['Manhã','Tarde','Noite'] });
+      h += '<label class="consent"><input type="checkbox" name="ok"'+(a.ok?' checked':'')+'><span>Autorizo o Dr. Rafael Moreno e a equipe dele a usarem estas informações e a entrarem em contato comigo por telefone ou WhatsApp para agendar a avaliação. Meus dados não serão compartilhados.</span></label>';
+    } else {
+      st.q.forEach(function(q){ h += qHtml(q); });
+    }
+    h += '<p class="q-err" id="qerr" hidden></p>';
+    h += '<div class="q-nav">'+(step>0?'<button type="button" class="btn btn-line" id="qb">Voltar</button>':'')+'<button type="button" class="btn btn-gold" id="qn">'+(st.contato?'Enviar e agendar':'Continuar')+'</button></div>';
+    box.innerHTML = h;
+    box.querySelectorAll('input').forEach(function(el){
+      el.addEventListener(/^(text|tel|email)$/.test(el.type)?'input':'change', function(){
+        var n = el.name;
+        if (el.type==='checkbox' && n!=='ok') {
+          var arr = [].slice.call(box.querySelectorAll('input[name="'+n+'"]:checked')).map(function(x){return x.value;});
+          if (EX.test(el.value) && el.checked) arr=[el.value]; else if (el.checked) arr = arr.filter(function(x){ return !EX.test(x); });
+          box.querySelectorAll('input[name="'+n+'"]').forEach(function(x){ x.checked = arr.indexOf(x.value)>-1; });
+          a[n] = arr;
+        } else if (n==='ok') a.ok = el.checked;
+        else if (n==='whats') {
+          var d = el.value.replace(/\D/g,'').slice(0,11), o='';
+          if (d.length>0) o='('+d.slice(0,2); if (d.length>=2) o+=') '+d.slice(2,7); if (d.length>=7) o+='-'+d.slice(7,11);
+          el.value = o; a.whats = o;
+        } else a[n] = el.value;
+        save();
+      });
+    });
+    var qb = document.getElementById('qb'); if (qb) qb.onclick = function(){ step--; save(); render(); top(); };
+    document.getElementById('qn').onclick = next;
+  }
+  function top(){ var f=document.getElementById('formulario'); var y=f.getBoundingClientRect().top+window.pageYOffset-84; window.scrollTo({top:y,behavior:'smooth'}); }
+  function err(m){ var e=document.getElementById('qerr'); e.textContent=m; e.hidden=false; }
+  function filled(v){ return !(v==null||v===''||(Array.isArray(v)&&!v.length)); }
+  function next(){
+    var ST = steps(), st = ST[step];
+    if (!st.contato) {
+      if (st.q.some(function(q){ return q.req && !filled(a[q.id]); })) return err('Responda as perguntas desta etapa para continuar.');
+      step++; save(); render(); top(); return;
+    }
+    if ((a.nome||'').trim().length<2) return err('Escreva o seu nome.');
+    if ((a.whats||'').replace(/\D/g,'').length<10) return err('Confira o WhatsApp com DDD.');
+    if (a.email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(a.email)) return err('Confira o e-mail ou deixe em branco.');
+    if ((a.prof||'').trim().length<2) return err('Conte qual é a sua profissão ou ocupação.');
+    if (!a.ok) return err('Para enviar, marque a autorização de contato.');
+    send();
+  }
+  function list(v){ return Array.isArray(v) ? v.join(', ') : (v==null?'':String(v)); }
+  function prio(){
+    var eva=+a.eva||0, q=a.quando||'';
+    if (q==='O quanto antes' || (eva>=7 && q!=='Só quero informações por enquanto')) return 'QUENTE';
+    if (q==='Nas próximas semanas' || eva>=4 || a.cirurgia==='Sim') return 'MORNO';
+    return 'FRIO';
+  }
+  function send(){
+    var b = document.getElementById('qn'); b.disabled = true; b.textContent = 'Enviando...';
+    var p = prio(), params = new URLSearchParams(location.search), origem = [];
+    ['utm_source','utm_medium','utm_campaign','utm_content','origem'].forEach(function(k){ if (params.get(k)) origem.push(k+'='+params.get(k)); });
+    var alerta = [(+a.eva>=7?'dor '+a.eva+'/10':''),((a.sintomas||[]).indexOf('Formigamento ou dormência')>-1?'formigamento':''),((a.sintomas||[]).indexOf('Dor que desce para a perna ou braço')>-1?'dor irradiada':''),(a.remedio==='Todos os dias'?'remédio todo dia':''),(a.cirurgia==='Sim'?'cirurgia já indicada':'')].filter(Boolean).join(' · ');
+    var rows = [['Prioridade',p],['Nome',a.nome],['WhatsApp',a.whats],['E-mail',a.email],['Profissão',a.prof],['Melhor horário',a.horario],['Cidade',a.cidade],['Quando quer consulta',a.quando],['Pontos de atenção',alerta]];
+    STEPS.forEach(function(st){ st.q.forEach(function(q){ if (['cidade','quando'].indexOf(q.id)>-1) return; if (filled(a[q.id])) rows.push([q.c, list(a[q.id])]); }); });
+    if (origem.length) rows.push(['Origem', origem.join(' · ')]);
+    var cor = p==='QUENTE'?'#A63A2B':p==='MORNO'?'#967848':'#5E6573';
+    var html = '<div style="font-family:Arial,Helvetica,sans-serif;max-width:640px;margin:0 auto;color:#0E1722">'+
+      '<div style="background:#0E1722;color:#fff;padding:18px 20px"><div style="color:#B89968;font-size:11px;letter-spacing:3px">NOVO LEAD · SITE DR. RAFAEL MORENO</div>'+
+      '<div style="font-family:Georgia,serif;font-size:22px;margin-top:6px">'+esc(a.nome)+'</div>'+
+      '<div style="margin-top:8px"><span style="background:'+cor+';color:#fff;padding:3px 10px;font-size:12px;font-weight:bold;letter-spacing:1px">LEAD '+p+'</span></div></div>'+
+      '<table style="width:100%;border-collapse:collapse;margin-top:12px">'+rows.filter(function(r){return filled(r[1]);}).map(function(r){ return '<tr><td style="padding:7px 12px 7px 0;color:#8B8F99;font-size:13px;vertical-align:top;width:38%;border-bottom:1px solid #F0EADD">'+esc(r[0])+'</td><td style="padding:7px 0;font-size:14px;border-bottom:1px solid #F0EADD">'+esc(r[1])+'</td></tr>'; }).join('')+'</table>'+
+      '<p style="margin-top:16px"><a href="https://wa.me/55'+String(a.whats||'').replace(/\D/g,'')+'" style="background:#2F8F6B;color:#fff;padding:10px 16px;text-decoration:none;font-size:14px">Chamar no WhatsApp</a></p></div>';
+    var text = 'LEAD '+p+' · '+a.nome+'\n'+rows.filter(function(r){return filled(r[1]);}).map(function(r){return r[0]+': '+r[1];}).join('\n');
+    var subj = '[Lead '+p+'] '+a.nome+' · '+list(a.regiao)+' · '+(a.cidade||'');
+    var payload = { key:WRITE_KEY, action:'lead', teste: params.get('teste')==='1', subject:subj, html:html, text:text };
+    var done = function(){
+      try { localStorage.removeItem(KEY); sessionStorage.setItem('rm-lead', JSON.stringify({nome:a.nome, whatsapp:a.whats})); } catch(e){}
+      try { window.dataLayer = window.dataLayer||[]; window.dataLayer.push({event:'lead_enviado', lead_prioridade:p}); } catch(e){}
+      window.location.href = OBRIGADO_URL;
+    };
+    fetch(ENDPOINT, { method:'POST', mode:'no-cors', headers:{'Content-Type':'text/plain;charset=utf-8'}, body: JSON.stringify(payload) })
+      .then(done).catch(function(){ b.disabled=false; b.textContent='Tentar de novo'; err('Não conseguimos enviar agora. Confira a internet e tente de novo.'); });
+  }
+  render();
 })();
 </script>
 
